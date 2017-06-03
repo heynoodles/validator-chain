@@ -9,7 +9,7 @@ import java.util.Map;
  * 对一系列串行校验进行封装，避免一大堆if条件判断
  * 注：
  * 此方法addAssert(final boolean b, String msg)不能达到延迟运算的效果
- * 建议逻辑使用SerializeValidator addAssert(Acceptor acceptor, String msg)，以达到懒加载的效果
+ * 建议使用ValidatorChain.addAssert(Assetor assetor, String msg)，以达到懒加载的效果
  */
 public class ValidatorChain {
 
